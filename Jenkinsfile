@@ -25,7 +25,7 @@ pipeline {
         
       }
       steps {
-        sh 'mvn compile package'
+        sh 'mvn compile'
       }
     }
     stage('Upload Artifates') {

@@ -6,16 +6,31 @@ pipeline {
     
   }
   stages {
-    stage('Git Repo') {
-      agent {
-        node {
-          label 'MAVEN'
+    stage('Build') {
+      parallel {
+        stage('Build') {
+          agent {
+            node {
+              label 'MAVEN'
+            }
+            
+          }
+          steps {
+            git(url: 'https://github.com/cit-latex/t1-student-maven-proj.git', branch: 'master')
+            sh 'mvn compile package'
+          }
         }
-        
-      }
-      steps {
-        git(url: 'https://github.com/cit-latex/t1-student-maven-proj.git', branch: 'master')
-        sh 'mvn compile package'
+        stage('Test') {
+          agent {
+            node {
+              label 'MAVEN'
+            }
+            
+          }
+          steps {
+            sh 'ls'
+          }
+        }
       }
     }
   }

@@ -21,5 +21,10 @@ pipeline {
         sh 'mvn deploy'
       }
     }
+    stage('Ansibel Deploy') {
+      steps {
+        sh 'ansible --version'
+      }
+    }
   }
 }

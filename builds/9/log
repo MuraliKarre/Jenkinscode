@@ -1,0 +1,32 @@
+Started by user [8mha:////4K1kVC+DJXg1/tc4p2IIbLi16ZhklRqv/7GIHD7lC88iAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/Checkout
+[Checkout] $ /bin/sh -xe /tmp/jenkins1661633397963943843.sh
++ pwd
+/var/lib/jenkins/workspace/Checkout
++ ls -lart
+total 0
+drwxr-xr-x 10 jenkins jenkins 149 Oct 30 13:12 ..
+drwxr-xr-x  3 jenkins jenkins  25 Oct 30 13:33 .
+drwxr-xr-x  5 jenkins jenkins  70 Oct 30 13:33 Jenkinscode
++ rm -rf Jenkinscode/
++ ls -lart
+total 0
+drwxr-xr-x 10 jenkins jenkins 149 Oct 30 13:12 ..
+drwxr-xr-x  2 jenkins jenkins   6 Oct 30 13:35 .
++ git clone https://github.com/MuraliKarre/Jenkinscode.git
+Cloning into 'Jenkinscode'...
++ pwd
+/var/lib/jenkins/workspace/Checkout
++ ls -la
+total 0
+drwxr-xr-x  3 jenkins jenkins  25 Oct 30 13:35 .
+drwxr-xr-x 10 jenkins jenkins 149 Oct 30 13:12 ..
+drwxr-xr-x  4 jenkins jenkins  51 Oct 30 13:35 Jenkinscode
++ cd Jenkinscode
++ rm -rf Jenkinscode/
++ ls
+builds
+Jenkinsfile
++ cp -R /var/lib/jenkins/jobs/Checkout/builds Jenkinscode/
+Finished: SUCCESS

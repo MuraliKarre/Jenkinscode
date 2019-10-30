@@ -1,0 +1,42 @@
+Started by user [8mha:////4K1kVC+DJXg1/tc4p2IIbLi16ZhklRqv/7GIHD7lC88iAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/Checkout
+[Checkout] $ /bin/sh -xe /tmp/jenkins7815768505757810656.sh
++ pwd
+/var/lib/jenkins/workspace/Checkout
++ ls -lart
+total 0
+drwxr-xr-x 10 jenkins jenkins 149 Oct 30 13:12 ..
+drwxr-xr-x  3 jenkins jenkins  25 Oct 30 14:04 .
+drwxr-xr-x  4 jenkins jenkins  51 Oct 30 14:04 Jenkinscode
++ rm -rf Jenkinscode/
++ ls -lart
+total 0
+drwxr-xr-x 10 jenkins jenkins 149 Oct 30 13:12 ..
+drwxr-xr-x  2 jenkins jenkins   6 Oct 30 14:07 .
++ git clone https://github.com/MuraliKarre/Jenkinscode.git
+Cloning into 'Jenkinscode'...
++ pwd
+/var/lib/jenkins/workspace/Checkout
++ ls -la
+total 0
+drwxr-xr-x  3 jenkins jenkins  25 Oct 30 14:07 .
+drwxr-xr-x 10 jenkins jenkins 149 Oct 30 13:12 ..
+drwxr-xr-x  4 jenkins jenkins  51 Oct 30 14:07 Jenkinscode
++ cd Jenkinscode
++ rm -rf Jenkinscode/
++ ls
+builds
+Jenkinsfile
++ sudo cp -rp /var/lib/jenkins/jobs/Checkout/builds /Jenkinscode
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
